@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-export default function Newcrud() {
+export default function CRUDexplain() {
 
 
 //initial input filed useState
@@ -52,7 +52,6 @@ const initialData=[
     empfeedback:'good'
 
 }
-
 ]
 //alreay some values in useState
 const [empDetails,setDetails]=useState(initialData);
@@ -117,7 +116,6 @@ const onHandleDelte=(index)=>{
 
     })
     setInput({ empRoll: '', empName: '', empAge: '', empEmail: '',empCountry:'',empGender:'',empfeedback:'' });
-
 
 }
 
@@ -213,54 +211,3 @@ const onHandleEdit=(index)=>{
         
   )
 }
-
-
-//css code
-// *{
-//     margin: 10px;
-//     padding: 1px;
-// }
-// table, td, th {
-//     border: 1px solid;
-//     padding: 7px;
-
-//   }
-  
-//   table {
-  
-//     border-collapse: collapse;
-//   }
-//   th,td{
-//     text-align: center;
-//   }
-
-//   button{
-//     padding: 8px;
-//   }
-//   #edit{
-//     background-color: rgb(2, 87, 216);
-//     cursor: pointer;
-//     border: none;
-//     border-radius: 5px;
-//   }
-
-//   #delete{
-//     background-color:rgb(243, 51, 51);
-//     cursor: pointer;
-//     border: none;
-//     border-radius: 5px;
-//   }
-//   .container{
-// position: absolute;
-// right:40px ;
-// top: 45px;
-// }
-// #submit{
-//   background-color: rgba(0, 26, 255, 0.904);
-//   outline: none;
-//   border: none;
-//   cursor: pointer;
-//   border-radius: 6px;
-//   width: 80px;
-//   color: white;
-// }

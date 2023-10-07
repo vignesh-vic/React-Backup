@@ -1,23 +1,51 @@
-import logo from './logo.svg';
+import React,{ useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [count,setcount]=useState(0)
+
+  // let myh="vignesh"
+
+
+  // const [Myname,setname] = useState('')
+// const [Myage,setage] = useState()
+
+// const mychange=(e)=>{
+//   const {name, value} = e.target;
+  
+//   if(name === 'Myname'){
+//     setname(value)
+//   }
+
+//   else if(name === 'Myage'){
+//     setage(value)
+//   }
+
+// }
+
+// const handlesubmit = () =>{
+//   console.log({Myname, Myage});
+// }
+
+const changename = ()=>{
+  setcount((prev)=>prev+10)
+  }
+
+const changecount= ()=>{
+  setcount((prev)=>prev-10)
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     
+      {/* <sample/>
+     <input name='Myname' value={Myname}  onChange={mychange} />
+     <input name='Myage' value={Myage}    onChange={mychange} />
+
+     <button onClick={()=>handlesubmit()} >click</button> */}
+    <h3>{count}</h3>
+     <button onClick={changename} >addcounter</button>
+     <button onClick={changecount} >removecount</button>
     </div>
   );
 }
